@@ -7,11 +7,11 @@ on:
     branches: [ master ]
 
 permissions:
-  packages: write  # 授予推送权限到 GHCR
+  packages: write
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04  # 使用最新 LTS 版本
 
     steps:
       - name: Checkout code
